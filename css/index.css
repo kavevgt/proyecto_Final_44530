@@ -1,0 +1,304 @@
+/* IMPORTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+/* VARIABLES*/
+:root {
+    /* Palette*/
+
+    --primary: #d09494;
+    --secondary: #cda03f;
+    --light: #fffbfb;
+    --accent: #8ca028;
+
+    /* Font Sizes */
+
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.2em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+
+    /* Spacings */
+
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 1rem;
+    --sp-sm: 0.9rem;
+    --sp-xs: 0.7rem;
+    /* Variables de espaciado */
+  --spacer-2xs: 2px;
+  --spacer-xs: 5px;
+  --spacer-s: 10px;
+  --spacer-m: 20px;
+  --spacer-l: 40px;
+  --spacer-xl: 80px;
+  --spacer-2xl: 160px;
+}
+
+     
+*{margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif
+}
+
+html{ font-size: 70.5%;}
+ul{ list-style-type: none;}
+
+a{ font-size: var(--text-sm) ;
+    text-decoration: none;
+    color: var(--light)
+}
+
+/* bodys */
+.body{
+    font-size: var(--text-md);
+    color: var(--accent);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+     }
+
+.fondo{ margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-image:url(../image/fondopagina/contacto.jpg);   
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-position: center;
+    ;}
+
+.fondohistoria{ 
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-image:url(../image/fondopagina/contacto.jpg);   
+    background-size: cover ;
+    background-repeat: no-repeat ;
+    background-position: center;
+    }
+
+
+
+/* header */
+
+header{
+    padding: var(--sp-sm);
+    background-color: var(--primary) ;
+    min-height: 70px;
+}
+.navbar {display: flex;
+justify-content:space-between;
+align-items: center;
+flex-wrap: wrap;
+}
+
+
+
+.menu{display: flex;
+gap: 1rem;
+flex-wrap: wrap;}
+
+.menu .menu__item{ font-weight: 600;
+     padding-right: 10px ; }
+
+ul li a:hover {
+   color:#d44f4f;
+}
+
+
+/* header */
+
+
+
+
+ /* textos */
+p{font-size: var(--sp-sm); color: var(--light);}
+.title{  font-size: var(--text-lg) ; color: var(--secondary);}
+.subtitle{color: var(--secondary);}
+h4 {color: var(--secondary);}
+h3{ color: var(--light)}
+h2{ color: var(--secondary); text-align: center;}
+ /* textos */
+
+
+/* main */
+
+/* main index*/
+.bannerindex-container{ 
+    background-image:url(../image/Index/pasti2.jpg); 
+    background-position: center top; 
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;}
+/* main index*/
+
+/* main historia*/
+
+
+.grid-historia{
+    display: grid;
+    
+    grid-template-columns: repeat( 4, 1fr 1fr );
+    grid-template-rows: repeat( 4, auto) ;
+    align-items: center;
+    }
+
+    .titlegrid{grid-column: 4/ span 7;
+                background-position: center;}
+    
+    .texto1{grid-column: 2/span 2;}
+    
+    .fotohisto{grid-column:  span 7;
+    }
+/* main historia */
+
+  /* @media */  
+    .texto2{grid-column: 2/span 9}
+@media screen and ( max-width: 576px) { 
+
+.grid-historia{
+    display: grid;
+    
+    grid-template-columns: repeat( auto );
+    grid-template-rows: repeat( auto) ;
+    align-items: center;
+    }
+
+    .titlegrid{grid-column: 2/span 5 ;
+                background-position: center;}
+    
+    .texto1{grid-column: 2/ span 5}
+    
+    .fotohisto{grid-column:  2/ span 6
+    }
+   
+    .texto2{grid-column: 2/span 5}
+
+.bannerindex-container{ 
+    background-image:url(../image/Index/LUNA-PARK-3_FEED-600x600.jpg); 
+ 
+    background-position: center top; 
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;}
+}
+ /* @media */  
+ 
+
+/* Footer */
+.footer{
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+    
+}
+.Copyright{display: flex 
+    ;align-items: center;}
+.footer_centro{
+    font-size: var(--text-sm);}
+
+/* Footer */
+
+/*configuaracion de historia*/
+
+
+/* container*/
+.container{ 
+    max-width: 1200px;
+    margin: 0 auto;}
+/* container */
+
+/* Discogradia*/
+.title-discografia{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.disco00{display: flex;
+justify-content:space-between;
+align-items: center;
+flex-wrap: wrap; }
+.disco01{display: flex;
+justify-content:space-between;
+align-items: center;
+flex-wrap: wrap}
+
+.disco{transition: all 300ms;
+transform: scale(1.01);}
+/* Discogradia*/
+
+/* Galeria*/
+
+.galeriflex{display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.fotovideo{ display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Galeria*/
+/* Contacto*/
+
+.contactos{ display: flex;
+min-height: 25vh;
+min-width: 340px;
+width: 25%; 
+margin: auto;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: column;
+align-items: center }
+
+.form{ background-color: var(--primary); 
+width: 80%;
+max-width: 750px;
+border-radius: 2em;
+padding: 10.5em 4.5em}
+
+.form-title{ 
+background-color: #fffbfb;
+text-align: center;
+font-size: 1.9;
+margin-bottom: .4em;}
+
+.contacto-title{ font-size: var(--text-sm); color: var(--secondary) ;}
+
+.form-container{ width: 100%;
+display: grid;
+gap: 1em;
+grid-auto-columns: 100%;
+ }
+.form_input{font-family: inherit;
+            font-size: 1rem;}
+.form_cta{font-family: inherit;
+            font-size: 1rem;}
+.form_imput_form_imput--mensage{resize: none;
+margin-bottom: .5em;}
+
+/* Contacto*/
