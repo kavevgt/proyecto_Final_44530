@@ -68,11 +68,11 @@ a{ font-size: var(--text-sm) ;
     padding: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
     background-image:url(../image/fondopagina/contacto.jpg);   
     background-size: cover ;
     background-repeat: no-repeat ;
     background-position: center;
+    
     ;}
 
 .fondohistoria{ 
@@ -160,46 +160,10 @@ h2{ color: var(--secondary); text-align: center;}
                 background-position: center;}
     
     .texto1{grid-column: 2/span 2;}
-    
+    .texto2{grid-column: 2/span 9}
     .fotohisto{grid-column:  span 7;
     }
 /* main historia */
-
-  /* @media */  
-    .texto2{grid-column: 2/span 9}
-@media screen and ( max-width: 576px) { 
-
-.grid-historia{
-    display: grid;
-    
-    grid-template-columns: repeat( auto );
-    grid-template-rows: repeat( auto) ;
-    align-items: center;
-    }
-
-    .titlegrid{grid-column: 2/span 5 ;
-                background-position: center;}
-    
-    .texto1{grid-column: 2/ span 5}
-    
-    .fotohisto{grid-column:  2/ span 6
-    }
-   
-    .texto2{grid-column: 2/span 5}
-
-.bannerindex-container{ 
-    background-image:url(../image/Index/LUNA-PARK-3_FEED-600x600.jpg); 
- 
-    background-position: center top; 
-    background-size: cover; 
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
-    visibility: inherit;
-    z-index: 20;}
-}
- /* @media */  
- 
 
 /* Footer */
 .footer{
@@ -228,12 +192,24 @@ h2{ color: var(--secondary); text-align: center;}
 /* container */
 
 /* Discogradia*/
+.discografia-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
 .title-discografia{display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
 }
+
+.disco0{display: flex;
+justify-content:space-between;
+align-items: center;
+flex-wrap: wrap; }
 
 .disco00{display: flex;
 justify-content:space-between;
@@ -251,14 +227,16 @@ transform: scale(1.01);}
 /* Galeria*/
 
 .galeriflex{display: flex;
+    align-items: center;
+    justify-content: space-around;
     flex-direction: column;
-    align-items: center;}
+}
 
 .fotovideo{ display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  
 }
 
 /* Galeria*/
@@ -302,3 +280,46 @@ grid-auto-columns: 100%;
 margin-bottom: .5em;}
 
 /* Contacto*/
+
+/* @media */  
+    
+@media screen and ( max-width: 572px) { 
+
+.grid-historia{
+    display: grid;
+    grid-template-columns: repeat( auto );
+    grid-template-rows: repeat( auto) ;
+    align-items: center;
+    }
+
+    .titlegrid{grid-column: 2/span 5 ;
+                background-position: center;}
+    
+    .texto1{grid-column: 2/ span 5}
+    
+    .fotohisto{grid-column:  2/ span 6;
+                width: 110%;
+ }
+   
+    .texto2{grid-column: 2/span 5}
+
+.bannerindex-container{ 
+     background-image: url(../image/Index/LUNA-PARK-3_FEED-600x600.jpg);
+    background-position: center top;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+}
+.galeriflex{display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   
+}
+
+
+}
+/* @media */  
