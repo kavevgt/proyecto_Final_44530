@@ -243,7 +243,7 @@ transform: scale(1.01);}
 /* Contacto*/
 
 .contactos{ display: flex;
-min-height: 25vh;
+min-height: 100vh;
 min-width: 340px;
 width: 25%; 
 margin: auto;
@@ -307,7 +307,7 @@ margin-bottom: .5em;}
     background-position: center top;
     background-size: cover;
     width: 100vw;
-    height: 80vh;
+    height: 70vh;
     opacity: 1;
     visibility: inherit;
     z-index: 20;
@@ -315,10 +315,20 @@ margin-bottom: .5em;}
 .galeriflex{display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: column;}
    
+.disco00{display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}   
+.disco01{display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
 }
-
 
 }
 /* @media */  
