@@ -26,7 +26,7 @@
     --sp-xl: 8rem;
     --sp-lg: 5rem;
     --sp-md: 1rem;
-    --sp-sm: 0.9rem;
+    --sp-sm: 1.2rem;
     --sp-xs: 0.7rem;
     /* Variables de espaciado */
   --spacer-2xs: 2px;
@@ -66,6 +66,7 @@ a{ font-size: var(--text-sm) ;
 
 .fondo{ margin: 0;
     padding: 0;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
     background-image:url(../image/fondopagina/contacto.jpg);   
@@ -152,7 +153,7 @@ h2{ color: var(--secondary); text-align: center;}
     display: grid;
     
     grid-template-columns: repeat( 4, 1fr 1fr );
-    grid-template-rows: repeat( 4, auto) ;
+    grid-template-rows: repeat( 4, ) ;
     align-items: center;
     }
 
@@ -161,7 +162,12 @@ h2{ color: var(--secondary); text-align: center;}
     
     .texto1{grid-column: 2/span 2;}
     .texto2{grid-column: 2/span 9}
-    .fotohisto{grid-column:  span 7;
+    .fotohisto{grid-column:  span 5; 
+    background-size: cover;
+    height: 279px;
+    padding-left: 15%;
+
+
     }
 /* main historia */
 
@@ -176,7 +182,10 @@ h2{ color: var(--secondary); text-align: center;}
     
 }
 .Copyright{display: flex 
-    ;align-items: center;}
+    ;align-items: center;
+    padding: 10px;}
+.imgcopy{padding: 5px;}
+.texcopy{ padding: 5px;}
 .footer_centro{
     font-size: var(--text-sm);}
 
@@ -194,6 +203,7 @@ h2{ color: var(--secondary); text-align: center;}
 /* Discogradia*/
 .discografia-container{
     display: flex;
+    min-height: 100vh;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
@@ -294,13 +304,15 @@ margin-bottom: .5em;}
     .titlegrid{grid-column: 2/span 5 ;
                 background-position: center;}
     
-    .texto1{grid-column: 2/ span 5}
+    .texto1{grid-column: 2/ span 6; font-size: 1.2em}
     
     .fotohisto{grid-column:  2/ span 6;
                 width: 110%;
+                height: 285px;
+                padding: 0;
  }
    
-    .texto2{grid-column: 2/span 5}
+    .texto2{grid-column: 2/span 6}
 
 .bannerindex-container{ 
      background-image: url(../image/Index/LUNA-PARK-3_FEED-600x600.jpg);
