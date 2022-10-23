@@ -379,6 +379,12 @@ align-items: flex-start;
 .checkevent:checked + ul{ display: block; }
 }
 
-.toggle-menu{ display: none; } 
-.checkevent{ display: none;}
+@media screen and ( min-width: 520px) {
+    
+    .toggle-menu{ display: none; }
+    .checkevent{ display: none;}
+}
+    
+
+
 /* @media */  
