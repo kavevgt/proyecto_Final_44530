@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+/* Partial */
+@media screen and (max-width: 520px) {
+  .grid-historia {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .grid-historia .titlegrid {
+      padding: 25px; }
+    .grid-historia .texto1 {
+      padding: 30px; }
+    .grid-historia .fotohisto {
+      height: 285px;
+      padding: 0; }
+    .grid-historia .texto2 {
+      padding: 30px; }
+  .bannerindex-container {
+    background-image: url(../../image/Index/LUNA-PARK-3_FEED-600x600.jpg);
+    background-position: center top;
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20; }
+  .galeriflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column; }
+  .disco00 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly; }
+  .disco01 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly; }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row; }
+  header .navbar .menu {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+    list-style: none;
+    display: none;
+    align-items: center; }
+  .toggle-menu {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    width: 46px;
+    height: 50px;
+    filter: invert(1); }
+  .checkevent {
+    position: absolute;
+    top: 26px;
+    right: 16px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    opacity: 0; }
+  .checkevent:checked + ul {
+    display: block; } }
+
+@media screen and (min-width: 520px) {
+  .menu {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    display: inline-flex; }
+  .toggle-menu {
+    display: none; }
+  .checkevent {
+    display: none; }
+  .grid-historia {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr 1fr);
+    grid-template-rows: repeat(4);
+    align-items: center; }
+  .titlegrid {
+    grid-column: 4/ span 7;
+    background-position: center; }
+  .texto1 {
+    grid-column: 2/span 2; }
+  .texto2 {
+    grid-column: 2/span 9; }
+  .fotohisto {
+    grid-column: span 5;
+    background-size: cover;
+    height: 279px;
+    padding-left: 15%; }
+  .bannerindex-container {
+    background-image: url(/image/Index/pasti2.jpg);
+    background-position: center top;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20; } }
+
+/* Misc*/
+/*Normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+html {
+  font-size: 70.5%; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  font-size: 1.6em;
+  text-decoration: none;
+  color: #fffbfb; }
+
+p {
+  font-size: 1.2rem;
+  color: #fffbfb; }
+
+.title {
+  font-size: 3.2em;
+  color: #cda03f; }
+
+.subtitle {
+  color: #cda03f; }
+
+h4 {
+  color: #cda03f; }
+
+h3 {
+  color: #fffbfb; }
+
+h2 {
+  color: #cda03f;
+  text-align: center; }
+
+.fondo {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: url(../image/fondopagina/contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fondohistoria {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-image: url(/image/fondopagina/contacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.contactos {
+  display: flex;
+  min-height: 100vh;
+  min-width: 340px;
+  width: 25%;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+/* Pages */
+.galeriflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; }
+
+.fotovideo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
+.discografia-container {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+  .discografia-container .title-discografia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .discografia-container .disco0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .discografia-container .disco00 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .discografia-container .disco01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .discografia-container .disco {
+    transition: all 300ms;
+    transform: scale(1.01); }
+
+/* Contacto*/
+.form {
+  background-color: #d09494;
+  width: 80%;
+  max-width: 750px;
+  border-radius: 2em;
+  padding: 10.5em 4.5em; }
+
+.form-title {
+  background-color: #fffbfb;
+  text-align: center;
+  font-size: 1.9;
+  margin-bottom: .4em; }
+
+.contacto-title {
+  font-size: 1.6em;
+  color: #cda03f; }
+
+.form-container {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%; }
+
+.form_input {
+  font-family: inherit;
+  font-size: 1rem; }
+
+.form_cta {
+  font-family: inherit;
+  font-size: 1rem; }
+
+.form_imput_form_imput--mensage {
+  resize: none;
+  margin-bottom: .5em; }
+
+/* Contacto*/
+/* Footer */
+.footer {
+  background-color: #d09494;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .footer .Copyright {
+    display: flex;
+    align-items: center;
+    padding: 10px; }
+    .footer .Copyright .imgcopy {
+      padding: 5px; }
+    .footer .Copyright .texcopy {
+      padding: 5px; }
+    .footer .Copyright .footer_centro {
+      font-size: 1.6em; }
+
+header {
+  padding: 1.2rem;
+  background-color: #d09494;
+  min-height: 70px; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    header .navbar .menu .menu__item {
+      font-weight: 600;
+      padding-right: 10px; }
+      header .navbar .menu .menu__item ul li a:hover {
+        color: #d44f4f; }

@@ -1,0 +1,32 @@
+/* Contacto*/
+
+
+
+
+.form{ background-color: $primary; 
+width: 80%;
+max-width: 750px;
+border-radius: 2em;
+padding: 10.5em 4.5em}
+
+.form-title{ 
+background-color: #fffbfb;
+text-align: center;
+font-size: 1.9;
+margin-bottom: .4em;}
+
+.contacto-title{ font-size: $text-sm; color: $secondary ;}
+
+.form-container{ width: 100%;
+display: grid;
+gap: 1em;
+grid-auto-columns: 100%;
+ }
+.form_input{font-family: inherit;
+            font-size: 1rem;}
+.form_cta{font-family: inherit;
+            font-size: 1rem;}
+.form_imput_form_imput--mensage{resize: none;
+margin-bottom: .5em;}
+
+/* Contacto*/

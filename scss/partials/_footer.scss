@@ -1,0 +1,16 @@
+/* Footer */
+.footer{
+    background-color: $primary;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .Copyright{display: flex ;align-items: center; padding: 10px;
+        .imgcopy{padding: 5px;}
+        .texcopy{ padding: 5px;}
+        .footer_centro{
+            font-size: $text-sm;}
+        }
+    }

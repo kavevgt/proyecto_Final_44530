@@ -1,0 +1,15 @@
+.discografia-container{ display: flex;min-height: 100vh;flex-wrap: wrap;flex-direction: column;align-content: center;
+align-items: center;
+
+        .title-discografia{display: flex; justify-content: space-between;
+         align-items: center; flex-wrap: wrap;flex-direction: column;}
+
+        .disco0{display: flex;justify-content:space-between;
+          align-items: center;flex-wrap: wrap; }
+        .disco00{display: flex; justify-content:space-between;
+                align-items: center; flex-wrap: wrap; }
+        .disco01{display: flex; justify-content:space-between;
+            align-items: center;flex-wrap: wrap}
+        .disco{transition: all 300ms; transform: scale(1.01);
+        } 
+}

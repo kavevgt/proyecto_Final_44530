@@ -1,0 +1,21 @@
+
+header{ padding: $sp-sm;    background-color: $primary; min-height: 70px;
+         
+    .navbar {display: flex; justify-content:space-between; align-items: center;
+            flex-wrap: wrap;
+            
+            .menu .menu__item{ font-weight: 600;
+                padding-right: 10px ;
+                
+                ul li a:hover {
+                color:#d44f4f;}
+            }
+        }
+
+    }
+
+
+
+
+
+
