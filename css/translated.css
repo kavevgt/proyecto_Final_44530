@@ -15,7 +15,7 @@
     .grid-historia .texto2 {
       padding: 30px; }
   .bannerindex-container {
-    background-image: url(../../image/Index/LUNA-PARK-3_FEED-600x600.jpg);
+    background-image: url(../image/Index/LUNA-PARK-3_FEED-600x600.jpg);
     background-position: center top;
     background-size: cover;
     width: 100vw;
@@ -101,7 +101,7 @@
     height: 279px;
     padding-left: 15%; }
   .bannerindex-container {
-    background-image: url(/image/Index/pasti2.jpg);
+    background-image: url(../image/Index/pasti2.jpg);
     background-position: center top;
     background-size: cover;
     width: 100vw;
@@ -164,7 +164,7 @@ h2 {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-image: url(/image/fondopagina/contacto.jpg);
+  background-image: url(../image/fondopagina/contacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
